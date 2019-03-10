@@ -3,7 +3,7 @@ class Dog
   @@all = []
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << Dog.self
   end
   def self.all
     @@all.each do |dog|
